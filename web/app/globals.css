@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #E11D48; /* //c54e49 */
+  --color-brand-dark: #BE123C; 
+}
+
+/* keep your existing :root variables + body background etc below */
+:root {
+  --tp-red: 225 29 72; /* #E11D48 */
+  --tp-dark: 11 18 32; /* #0B1220 */
+  --tp-cream: 255 247 237; /* #FFF7ED */
+  --tp-slate: 148 163 184; /* #94A3B8 */
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: rgb(var(--tp-dark));
+  background:
+    radial-gradient(1200px 600px at 20% -10%, rgba(var(--tp-red), 0.14), transparent 60%),
+    radial-gradient(900px 500px at 90% 10%, rgba(var(--tp-red), 0.10), transparent 55%),
+    rgb(var(--tp-cream));
+}

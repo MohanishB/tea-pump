@@ -1,0 +1,12 @@
+packages:
+  - web
+  - api
+
+ignoredBuiltDependencies:
+  - sharp
+  - unrs-resolver
+
+onlyBuiltDependencies:
+  - '@nestjs/core'
+  - '@prisma/engines'
+  - prisma

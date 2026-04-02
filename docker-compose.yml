@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:16
+    container_name: teapump-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: teapump
+      POSTGRES_PASSWORD: teapump
+      POSTGRES_DB: teapump
+    ports:
+      - "5432:5432"
+    volumes:
+      - teapump_pg:/var/lib/postgresql/data
+
+volumes:
+  teapump_pg:
